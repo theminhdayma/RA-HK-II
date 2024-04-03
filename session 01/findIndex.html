@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            find: Tìm kiếm phần tử thỏa mãn điều kiện
+            Nếu thỏa mãn điều kiện thì trả về vị trí
+            Nếu không thỏa mãn điều kiện thì trả về -1
+        */
+
+      let users = [
+        {
+          id: 1,
+          name: "Minh",
+          age: 18,
+        },
+        {
+          id: 2,
+          name: "Nam",
+          age: 18,
+        },
+        {
+          id: 3,
+          name: "Quang",
+          age: 16,
+        },
+      ];
+
+      // Tìm kiếm trong mảng users có phần tử id là 2 hay không
+      let result = users.findIndex((item, index, arr) => {
+        return item.id === 3;
+      });
+      console.log("2. ", result);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function filterArray(arr1, arr2) {
+            let array = [];
+            arr2.forEach(item => {
+                let index = arr1.indexOf(item);
+                if (index !== -1) {
+                    arr1.splice(index, 1);
+                    array.push(item);                  
+                }
+            });
+            return array;
+        }
+
+        let array1 = [1, 2, "1", 3, 'a', 4, "b"];
+        let array2 = [1, 2, 3, 4];
+        let result = filterArray(array1, array2);
+
+        console.log("Mảng array1 mới:", array1);
+        console.log("Các phần tử bị loại bỏ: ", result);
+    </script>
+</body>
+</html>

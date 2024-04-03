@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+    Các Hàm nâng cao trong JS
+
+    1. forEach()
+    2. map()
+    3.filler()
+    4. find()
+    5. findIndex()
+
+    I, Sự khác nhau giữa arrow function và function thường là như thế nào ?
+    1. Đối với arrow function: 
+
+        -  Đối với arrow function phải gọi sau khi khai báo
+        -  Ngắn gọn hơn functin bình thường
+        -  Không dùng được đối tượng arguments(Sẽ lấy hết các đối số truyền vào)
+        -  Không thể dùng làm hàm tạo constrctor 
+        -  binding (ràng buộc) this
+        -  this đại diện cho đối tượng Window
+    
+    2. Đối với function bình thường
+        -  Khi đối tượng gọi phiowng thức thì this đại diện cho đối tượng mới
+    -->
+  </body>
+  <script>
+    // function bình thường
+    // function sum1() {
+    //   console.log("1. ", arguments);
+    // }
+    // console.log(sum1(1, 2, 3, 4, 5));
+
+    // const sum2 = (a, b) => {
+    //     console.log("2. ", arguments);
+    // };
+    // console.log(sum2(3, 5, 7, 9));
+    // ==> Không dùng được thuộc tính arguments
+
+    // function Student(name, age) {
+    //   this.name = name;
+    //   this.age = age;
+    // }
+
+    // let str = new Student("Minh", 18);
+    // console.log(str);
+    // ==> Có thể tạo được object mới
+
+    // const Student = (name, age) => {
+    //   this.name = name;
+    //   this.age = age;
+    // };
+    // let str = new Student("Minh", 18);
+    // console.log(str);
+    // ==> Không dùng được arrow function để tạo object mới
+
+    let obj = {
+      name: "Minh Sâm",
+      age: 17,
+      address: "Phụng Thượng",
+      getAddress: function () {
+        console.log("Địa chỉ: ", this.address);
+      },
+    };
+    console.log("3. ", obj.getAddress());
+
+
+
+  </script>
+</html>

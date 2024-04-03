@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function check(arr, a) {
+      let number = arr.filter(item => item <= a);
+
+      let max = Math.max(...number);
+      return max;
+    }
+
+    let array = [2, 4, 6, 8, 10];
+    let a = 7;
+    
+    console.log(check(array, a));
+  </script>
+</body>
+</html>

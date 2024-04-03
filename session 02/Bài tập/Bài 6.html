@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Cách 1:
+      function sum1(arr){
+        return arr.reduce((acc, cur) => acc + cur);
+      }
+
+      // Cách 2:
+      function sum2(arr){
+        let sum = 0;
+        arr.map((item) => {
+            sum += item;
+        });
+        return sum;
+      }
+      let numbers = [3, 4, 5];
+      console.log("Cách 1:", sum1(numbers));
+      console.log("Cách 2:", sum2(numbers));
+    </script>
+  </body>
+</html>

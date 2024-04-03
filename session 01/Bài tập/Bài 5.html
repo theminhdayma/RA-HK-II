@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let accounts = [
+        {
+          userName: "Minh Sâm",
+          password: "123456",
+        },
+        {
+          userName: "Thế Minh",
+          password: "minh dep trai",
+        },
+        {
+          userName: "Ngọc Quang",
+          password: "hello world",
+        },
+      ];
+
+      let results = accounts.filter((account, index) => {
+        if (account.password.includes(" ")) {
+          return index;
+        }
+      });
+
+      if (results.length > 0) {
+        console.log(results);
+      } else {
+        console.log("Tất cả mật khẩu đều hợp lệ");
+      }
+    </script>
+  </body>
+</html>

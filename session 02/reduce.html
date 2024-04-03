@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            reduce(): thường dùng để tính toán
+            accumulator: biến tích lũy
+        */
+
+      let carts = [
+        {
+          product: "ip5",
+          price: 5000,
+          quantity: 5,
+        },
+        {
+          product: "ipX",
+          price: 10000,
+          quantity: 3,
+        },
+        {
+          product: "ip15 Promax",
+          price: 25000,
+          quantity: 6,
+        },
+      ];
+
+      let numbers = [3, 4, 5];
+      let reduce = numbers.reduce((accumulator, currentValue, array) => {
+        return accumulator + currentValue;
+      }, 0);
+      console.log(reduce);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function allPositiveNumbers(arr, a) {
+        return arr.every((item) => item % a == 0);
+      }
+
+      let array1 = [1, 2, 3];
+      let array2 = [4, 2, 8, -10];
+      let a = 2;
+
+      console.log(allPositiveNumbers(array1, a));
+      console.log(allPositiveNumbers(array2, a));
+    </script>
+  </body>
+</html>

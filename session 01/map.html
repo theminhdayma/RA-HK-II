@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /*
+        DUYỆT CÁC PHẦN TỬ TRONG MẢNG
+        tạo ra mảng mới
+        tạo ra mảng mới bằng số phần tử ban đầu
+    */
+
+    let array = [4, 5, 6, 8, 9];
+
+    let result = array.map((item, index, arr) => {
+      //   console.log("item", item);
+      //   console.log("index", index);
+      //   console.log("arr", arr);
+      //   console.log("==============");
+      return item > 5;
+    });
+
+    console.log("1111", result);
+  </script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [1, 7, 2, 8, 11, 4];
+      let names = ["Minh", "Sơn", "Nam", "Quang", "Sâm"];
+
+      let result2 = names.sort();
+      let result1 = numbers.sort((a, b) => {
+        return b - a;
+      });
+      console.log("numbers: ", result1);
+      console.log("names: ", result2);
+
+      let films = [
+        {
+          name: "abc",
+          date: "2024/12/23",
+        },
+        {
+          name: "xyz",
+          date: "2025/03/11",
+        },
+        {
+          name: "efh",
+          date: "2021/05/19",
+        },
+      ];
+
+      let sortFilm = films.sort((a, b) => {
+        return a.date.localeCompare(b.date);
+      });
+      console.log(sortFilm);
+    </script>
+  </body>
+</html>

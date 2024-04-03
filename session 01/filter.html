@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /*
+        filter: Lọc
+        Tạo ra mảng mới
+        Nếu không thỏa mãn điều kiện lọc thì sẽ tạo ra 1 mảng rỗng
+    */
+
+    let array = [4, 5, 6, 8, 9];
+
+    let result = array.filter((item, index, arr) => {
+      //   console.log("item", item);
+      //   console.log("index", index);
+      //   console.log("arr", arr);
+      //   console.log("==============");
+      return item > 6;
+    });
+
+    console.log("4.", result);
+  </script>
+</html>

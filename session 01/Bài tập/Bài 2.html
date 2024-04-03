@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let students = [
+            {
+                id: 1,
+                number: 20,
+            },
+            {
+                id: 2,
+                number: 50,
+            },
+            {
+                id: 3,
+                number: 25,
+            },
+        ];
+
+        let std = students.map((student) => {
+            if (student.number > 40) {
+                student.number = student.number - 10;
+            } else if (student.number < 30) {
+                student.number = student.number + 10;
+            }
+            return student;
+        });
+        
+        console.log(std);
+
+    </script>
+  </body>
+</html>
