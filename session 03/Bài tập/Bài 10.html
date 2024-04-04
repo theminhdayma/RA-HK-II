@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function totalArrayElements(...array) {
+            let newArray = [];
+            for (let arr of array) {
+                let sumElement = arr.reduce((acc, cur) => acc + cur, 0);
+                newArray.push(sumElement); 
+            }
+            return newArray;
+        }   
+
+        let arr1 = [1, 2, 3];
+        let arr2 = [2, 3, 4];
+        let arr3 = [3, 4, 5];
+
+        console.log(totalArrayElements(arr1, arr2, arr3));
+    </script>
+</body>
+</html>

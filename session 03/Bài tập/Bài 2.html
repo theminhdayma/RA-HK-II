@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const a = 9;
+      const array = [1, 2, 3, 4, 5, 6, 7, 8];
+
+      // Gán lại giá trị
+        a = 10;
+        console.log(a);
+      /* 
+        ==> Không thể gán lại giá trị khi sử dụng biến const
+        vì do tính chất bảo toàn đặc trưng của biến const 
+      */
+
+      //Thêm phần tử mới vào mảng
+      array.push(a);
+      console.log(array);
+
+      /* 
+            ==> Vẫn có thể thêm phần tử vào mảng chỉ cần đảm bảo rằng
+            nó không được gắn với mảng khác sau khi khởi tạo
+        */
+    </script>
+  </body>
+</html>

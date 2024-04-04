@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            for of:
+            for in : Dùng để duyệt các phần tử ==> trả về chỉ số (index)
+        */
+
+        let numbers = [1,2,3,4,5,6];
+        for(let i in numbers){
+            console.log(i);
+            console.log("for in: ", numbers[i]);
+        }
+
+        for(let i of numbers){
+            console.log("for of: ", i);
+        }
+    </script>
+</body>
+</html>

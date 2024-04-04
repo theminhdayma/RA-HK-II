@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function arrayConcatenation(arr1, arr2, a) {
+        if (a < arr1.length && a >= 0) {
+          arr1.splice(a, 0, ...arr2);
+          return arr1;
+        } else {
+          return "Không hợp lệ";
+        }
+      }
+
+      let arr1 = [1, 2, 3, 4, 5, 9];
+      let arr2 = [6, 7, 8];
+      let a = 5;
+      let b = 10;
+
+      console.log("Vị trí đúng: ", arrayConcatenation(arr1, arr2, a));
+      console.log("Vị trí sai: ", arrayConcatenation(arr1, arr2, b));
+    </script>
+  </body>
+</html>

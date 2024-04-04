@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            ==> Quang trọng: dùng nhiều trong React JS
+            1. Dùng với array
+            2. Dùng với object
+        */
+
+        let students = ["Minh", "Sâm", "Quang"];
+        let [std1, std2, std3] = students;
+        console.log("std1", std1);
+        console.log("std2", std2);
+        console.log("std3", std3);
+
+        let obj = {
+            name: "Minh",
+            id: 1,
+            address: "Hà Nội",
+            age: 18,
+        }
+
+        let {id, age, address} = obj;
+        console.log(id, age, address);
+    </script>
+</body>
+</html>

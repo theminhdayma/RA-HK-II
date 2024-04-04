@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            Spread operator: là dấu 3 chấm (...)
+            Trong object chia làm 2 dạng clone
+              1. deep clone: sâu
+              2. shalow clone: nông
+
+            ==> Tìm hiểu về 2 dạng clone
+        */
+
+        let obj1 = {
+            name: "Minh"
+        }
+
+        let obj2 = {...obj1}; // Dạng clone trong object
+        obj1.name = "Sâm";
+        console.log(obj2.name);
+
+        // let number1 = [1];
+        // let number2 = [1];
+
+        // console.log(number1 == number2);
+        // console.log(number1 === number2);
+
+        let array1 = [1,2,3,4]
+        let array2 = [5,6,7,8]
+        let array = [...array1, ...array2]
+        console.log(array);
+    </script>
+</body>
+</html>

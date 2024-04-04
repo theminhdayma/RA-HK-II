@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arrays = ["eat", "tea", "tan", "ate", "nat", "bat"];
+
+      let identicalCharacters = [];
+      for (let array of arrays) {
+        let found = false;
+        for (let arr of identicalCharacters) {
+          const sample = arr[0];
+          if (
+            array.split("").sort().join("") === sample.split("").sort().join("")
+          ) {
+            arr.push(array);
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          identicalCharacters.push([array]);
+        }
+      }
+
+      console.log(identicalCharacters);
+    </script>
+  </body>
+</html>
