@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        JS chia thành 2 dạng clone 
+        1. Shallow clone: clone nông
+           - spread
+           - object. assign
+        2. deep clone: clone sâu (clone hết)
+           - Chuyển sang dạng JSON
+
+    -->
+    <script>
+      let obj = {
+        name: "Minh",
+        id: 1,
+        address: {
+          city: "Hà Nội",
+        },
+      };
+
+      // clone sâu
+    //   let newObj = JSON.parse(JSON.stringify(obj));
+    //   obj.name = "Quang";
+    //   obj.address.city = "HCM";
+    //   console.log(newObj.name);
+    //   console.log(newObj.address.city);
+
+      // Clone nông
+    //   let newObj = { ...obj };
+    //   console.log(obj.address.city);
+    //   obj.name = "Quang";
+    //   console.log("1.", obj.name); // => Không thay đổi
+    //   console.log("2.", newObj.name); // => Thay đổi object
+
+    //   obj.address.city = "HCM";
+    //   console.log("3.", obj.address.city);
+    //   console.log("4.", newObj.address.city);
+    //   // => Thay đổi hết
+    // </script>
+  </body>
+</html>
