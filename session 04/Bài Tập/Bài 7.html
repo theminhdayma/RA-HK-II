@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var phoneBooks = [];
+      function addContact(name, phoneNumber, email) {
+        const contact = {
+          name: name,
+          phoneNumber: phoneNumber,
+          email: email,
+        };
+
+        phoneBooks.push(contact);
+      }
+
+      function displayContact() {
+        for (let i in phoneBooks) {
+          console.log("Liên Hệ", +i + 1);
+          console.log(`Tên: ${phoneBooks[i].name}`);
+          console.log(`Số điện thoại: ${phoneBooks[i].phoneNumber}`);
+          console.log(`Email: ${phoneBooks[i].email}`);
+          console.log("========================================");
+        }
+      }
+
+      addContact("Thế Minh", "0123456789", "theminh2005z@gmail.com");
+      addContact("Minh Sâm", "0987654321", "minhsam123@gmail.com");
+
+      displayContact();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            class: Từ khóa dùng để khởi tạo đối tượng
+               - Thuộc tính (key)
+               - Gía trị (value)
+        */
+
+        class Student {
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+
+            getAge() {
+                //Lấy năm hiện tại
+                let getYear = new Date().getFullYear();
+                return getYear - this.year;
+            }
+        }
+
+        let std1 = new Student("hoa", 2005);
+        console.log(std1);
+        console.log(std1.getAge());
+
+    </script>
+</body>
+</html>
