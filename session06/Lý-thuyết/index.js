@@ -1,0 +1,12 @@
+"use strict";
+console.log("Hello !!!");
+console.log("Hii");
+let a = 5;
+let userName = "Minh";
+let isCheck = true;
+let text = null;
+let names = undefined;
+let b = "hoa";
+b = 5;
+let c = NaN;
+c = 6;

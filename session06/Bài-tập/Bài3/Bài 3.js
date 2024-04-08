@@ -1,0 +1,12 @@
+"use strict";
+let a = 1;
+let b = 2;
+let c;
+c = a + b;
+console.log("Cộng: ", c);
+c = a - b;
+console.log("Trừ: ", c);
+c = a * b;
+console.log("Nhân: ", c);
+c = a / b;
+console.log("Chia: ", c);

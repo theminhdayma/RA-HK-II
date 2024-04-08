@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    .calculator {
+      width: 300px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    input,
+    button {
+      margin: 5px;
+      padding: 8px;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div class="calculator">
+      <input type="text" id="input1" placeholder="Number 1" />
+      <input type="text" id="input2" placeholder="number 2" />
+      <div class="buttons">
+        <button onclick="calculate('sum')">Cộng</button>
+        <button onclick="calculate('subtract')">Trừ</button>
+        <button onclick="calculate('multiply')">Nhân</button>
+        <button onclick="calculate('divide')">Chia</button>
+        <button onclick="calculate('exponential')">Lũy thừa</button>
+        <button onclick="calculate('square-root')">Căn Bậc Hai</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="./Bài 11.js"></script>
+  </body>
+</html>
