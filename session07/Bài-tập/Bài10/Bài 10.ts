@@ -7,7 +7,7 @@ function deleteFalsy(obj: { [key: string]: any }): void {
     }
 }
 
-let obj = {
+let object = {
     a: null,
     b: false,
     c: true,
@@ -17,6 +17,6 @@ let obj = {
     g: 'a'    
 };
 
-deleteFalsy(obj);
-console.log(obj);
+deleteFalsy(object);
+console.log(object);
 
