@@ -1,0 +1,35 @@
+
+
+1. Phân biệt interface và abstract.
+
+   - Interface:
+       + Một interface chỉ định các phương thức mà lớp phải triển khai
+       + Nó không chứa cài đặt cho bất kỳ phương thức nào
+       + Một lớp có thể triển khai nhiều interface
+	
+   - Abstract class:
+       + Một abstract class là một lớp trừu tượng mà không thể tạo ra 
+        các thực thể của nó mà phải tạo ra các thực thể ở lớp con
+
+       + Các lớp con kế thừa từ abstract class và triển khai các phương 
+        thức trừu tượng
+
+2. Có thể một interface kế thừa từ một interface khác không? 
+   Nếu có, điều gì xảy ra khi làm điều này?
+
+   - Một interface có thể kế thừa từ một hoặc nhiều interface khác bằng cách sử dụng từ khóa extends.
+
+3. interface có thể chứa thuộc tính được khai báo nhưng không được gán giá trị không?
+
+   - interface chỉ mô tả cấu trúc của đối tượng, do đó không có khái niệm về 
+      thuộc tính được khai báo nhưng không được gán giá trị
+
+4. Interface có thể chứa các phương thức đã triển khai không?
+
+   - Không, interface chỉ có thể chứa các phương thức mà chưa được triển khai (không có body)
+
+5. Một class có thể triển khai nhiều interface không? 
+   Nếu có, cách thức triển khai đó như thế nào?
+
+   - Có, một class có thể triển khai nhiều interface.
+     Để làm điều này, bạn chỉ cần liệt kê tên các interface mà class đó triển khai sau từ khóa implements
