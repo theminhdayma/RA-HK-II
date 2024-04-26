@@ -1,6 +1,6 @@
 function logAccess(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
-    const originalGetter = descriptor.get;
-    const originalSetter = descriptor.set;
+    let originalGetter = descriptor.get;
+    let originalSetter = descriptor.set;
   
     if (originalGetter) {
       descriptor.get = function () {
@@ -33,7 +33,7 @@ function logAccess(target: any, propertyKey: string, descriptor: PropertyDescrip
     }
   }
   
-  const person = new Person("John");
+  let person = new Person("John");
   console.log(person.name);
   person.name = "Alice";
 
@@ -47,3 +47,23 @@ function logAccess(target: any, propertyKey: string, descriptor: PropertyDescrip
     sử dụng bên trong class đó và không thể truy cập từ bên ngoài class đó. Điều này giúp giữ 
     cho dữ liệu được ẩn và bảo vệ khỏi sự thay đổi không mong muốn.
 */
+
+function frequency(arr: number[]): number {
+  let ischeck: number;
+  let luutru: number = 0;
+  for(let i = 0; i < arr.length; i++) {
+    ischeck = 0;
+    for(let j = 1; j < arr.length ; j++) {
+      if(arr[i] === arr[j]){
+        ischeck++
+      }
+    }
+    if(luutru <= ischeck) {
+      luutru = ischeck
+    }
+  }
+  return luutru
+}
+
+let arr = [1,2,3,4,5,6,5,4,5];
+console.log(frequency(arr));
