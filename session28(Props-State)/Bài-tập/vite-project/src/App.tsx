@@ -9,6 +9,7 @@ import Parent01 from './components/Bài6/Parent01'
 import ListPost from './components/Bài7/ListPost'
 import ListProduct from './components/Bài8/ListProduct'
 import Status from './components/Bài9/Status'
+import TodoList from './components/Bài10/TodoList'
 
 export default function App() {
   return (
@@ -32,7 +33,7 @@ export default function App() {
       <h1>Bài 9</h1>
       <Status></Status>
       <h1>Bài 10</h1>
-
+      <TodoList></TodoList>
       <h1>Bài 11</h1>
 
       <h1>Bài 12</h1>
