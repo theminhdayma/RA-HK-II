@@ -1,0 +1,77 @@
+.todoList {
+    width: 800px;
+    border: 1px solid gray;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.addTodo {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#search {
+    width: 84%;
+    height: 30px;
+}
+
+.btnAdd {
+    border-radius: 5px;
+    background-color: aqua;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.allTodo {
+    width: 20%;
+    color: rgb(35, 127, 247);
+}
+
+.h5 {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.thanhNgang {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(35, 127, 247);
+}
+
+.render {
+    width: 98%;
+    height: 24px;
+    padding: 10px;
+    background-color: rgb(209, 247, 247);
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose {
+    display: flex;
+    gap: 10px;
+}
+
+.choose input {
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+}
+

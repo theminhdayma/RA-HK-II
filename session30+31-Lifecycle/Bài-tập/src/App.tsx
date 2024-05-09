@@ -10,6 +10,7 @@ import Baitap7 from './components/session30/Bài7/Baitap7'
 import Baitap8 from './components/session30/Bài8/Baitap8'
 import Clock from './components/session30/Bài9/Clock'
 import Counter from './components/session30/Bài10/Counter'
+import TodoList from './components/session30/Bài11/TodoList'
 
 export default function App() {
   return (
@@ -35,6 +36,8 @@ export default function App() {
       <Clock></Clock>
       <h1>Bài 10</h1>
       <Counter></Counter>
+      <h1>Bài 11</h1>
+      <TodoList></TodoList>
       <br /><br /><br />
       <br /><br /><br />
       <h1 style={{fontSize: 70}}>Session 31</h1>
