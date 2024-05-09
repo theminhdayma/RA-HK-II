@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import swal from 'sweetalert';
 
-export default function Search() {
+interface SearchProps {
+  updateTodoList: (newTodoList: string[]) => void;
+}
+
+export default function Search({ updateTodoList }: SearchProps) {
   const [inputValue, setInputValue] = useState('');
-  const [todoList, setTodoList] = useState<any[]>(JSON.parse(localStorage.getItem('todoList') || '[]'));
+  const [todoList, setTodoList] = useState<string[]>(JSON.parse(localStorage.getItem('todoList') || '[]'));
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-
     setInputValue(e.target.value);
   };
 
@@ -18,6 +21,8 @@ export default function Search() {
         setTodoList(newTodoList);
         localStorage.setItem('todoList', JSON.stringify(newTodoList));
         setInputValue('');
+        
+        updateTodoList(newTodoList);
       } else {
         setInputValue('');
         swal("Công việc đã có trong danh sách !!!");
