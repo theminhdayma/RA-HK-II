@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Cart from './Cart'
 
-export default function Header() {
+interface Props {
+  listCart: any[]
+}
+
+export default function Header({listCart}: Props) {
+
+  const [isCart, setIsCart] = useState<boolean>(false)
+
     const handleCart = () => {
-
+      setIsCart(!isCart)
     }
   return (
     <div className='header'>
@@ -10,10 +18,11 @@ export default function Header() {
             <span>Trang chủ</span>
             <span>Danh sách sản phẩm</span>
         </div>
-        <div className='header-right'>
-            <i onClick={handleCart} className="fa-solid fa-cart-shopping"></i>   
-            <div className='cirle'>0</div>       
+        <div onClick={handleCart} className='header-right'>
+            <i className="fa-solid fa-cart-shopping"></i>   
+            <div className='cirle'>{listCart.length}</div>       
         </div>
+        {isCart && (<Cart/>)}
     </div>
   )
 }
