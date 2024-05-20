@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 export default function UseRef() {
   const [count, setCount] = useState<number>(0);
   const useRef01 = useRef(0);
-  const forcusInput = useRef<HTMLInputElement>(null)
+  const forcusInput = useRef<HTMLInputElement>(null);
   console.log(useRef01);
 
   let index = 0;
@@ -17,8 +17,8 @@ export default function UseRef() {
   console.log("Gía trị của index: ", index);
 
   useEffect(() => {
-    forcusInput.current?.focus()
-  }, [])
+    forcusInput.current?.focus();
+  }, []);
   return (
     <div>
       <h1>UseRef</h1>
@@ -33,12 +33,14 @@ export default function UseRef() {
               vẫn giữ nguyên giá trọ refentype ban đầu
               2. giúp mặc định focus vào ô mình muốn
         */}
-        <label htmlFor="">Nhập rmail</label>
-        <input ref={forcusInput} type="email" />
-        <label htmlFor="">Nhập mật khẩu</label>
-        <input type="password" />
-        <button>Log In</button>
-        <br /><br /><br />
+      <label htmlFor="">Nhập rmail</label>
+      <input ref={forcusInput} type="email" />
+      <label htmlFor="">Nhập mật khẩu</label>
+      <input type="password" />
+      <button>Log In</button>
+      <br />
+      <br />
+      <br />
       <p>Gía trị của count: {count}</p>
       <button onClick={handleClick}>Click Me !!! </button>
     </div>
