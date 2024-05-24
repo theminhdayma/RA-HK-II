@@ -1,0 +1,23 @@
+.content-full {
+    margin-left: 70px;
+    width: 90%;
+    .header {
+        width: 100%;
+        .admin {
+            margin-right: 100px;
+            width: 120px;
+            height: 30px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            img {
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
