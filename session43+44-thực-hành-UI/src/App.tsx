@@ -10,6 +10,8 @@ export default function App() {
       <LogIn />
       <h1>Admin</h1>
       <Admin />
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
     </div>
   );
 }
