@@ -1,0 +1,29 @@
+.listUser {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+ul {
+    width: 340px;
+    padding: 20px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.li {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+}

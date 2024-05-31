@@ -1,0 +1,9 @@
+.active {
+    background-color: rgb(12, 174, 255);
+    color: white;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
