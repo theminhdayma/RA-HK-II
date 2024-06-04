@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/components/Bài3/style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="src/components/Bài3/style/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="src/components/Bài3/style/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="src/components/Bài3/style/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="src/components/Bài3/style/style.css" />
+    <link rel="stylesheet" href="src/components/Bài3/style/flaticon.css" />
+    <link
+      rel="stylesheet"
+      href="src/components/Bài3/style/daterangepicker.css"
+    />
+    <link rel="stylesheet" href="src/components/Bài3/style/aos.css" />
+    <link rel="stylesheet" href="src/components/Bài3/style/style.css" />
+    <title>Tour Free Bootstrap Template for Travel Agency by Untree.co</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="src/components/Bài3/js/jquery-3.4.1.min.js"></script>
+    <script src="src/components/Bài3/js/popper.min.js"></script>
+    <script src="src/components/Bài3/js/bootstrap.min.js"></script>
+    <script src="src/components/Bài3/js/owl.carousel.min.js"></script>
+    <script src="src/components/Bài3/js/jquery.animateNumber.min.js"></script>
+    <script src="src/components/Bài3/js/jquery.waypoints.min.js"></script>
+    <script src="src/components/Bài3/js/jquery.fancybox.min.js"></script>
+    <script src="src/components/Bài3/js/aos.js"></script>
+    <script src="src/components/Bài3/js/moment.min.js"></script>
+    <script src="src/components/Bài3/js/daterangepicker.js"></script>
+    <script src="src/components/Bài3/js/typed.js"></script>
+
+    <script src="src/components/Bài3/js/custom.js"></script>
+    <script>
+      $(function () {
+        var slides = $(".slides"),
+          images = slides.find("img");
+
+        images.each(function (i) {
+          $(this).attr("data-id", i + 1);
+        });
+
+        var typed = new Typed(".typed-words", {
+          strings: [
+            "San Francisco.",
+            " Paris.",
+            " New Zealand.",
+            " Maui.",
+            " London.",
+          ],
+          typeSpeed: 80,
+          backSpeed: 80,
+          backDelay: 4000,
+          startDelay: 1000,
+          loop: true,
+          showCursor: true,
+          preStringTyped: (arrayPos, self) => {
+            arrayPos++;
+            console.log(arrayPos);
+            $(".slides img").removeClass("active");
+            $('.slides img[data-id="' + arrayPos + '"]').addClass("active");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
