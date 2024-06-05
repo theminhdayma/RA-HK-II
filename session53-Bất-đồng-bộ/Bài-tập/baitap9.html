@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [3, 5, 8, 2, 9, 4, 6, 3, 4, 8, 1];
+      function myFilter(arr, number, callback) {
+        let newArr = [];
+        arr.map((item) => {
+          if (item === number) {
+            newArr.push(item);
+          }
+        });
+        callback(newArr);
+      }
+
+      function print(arr) {
+        console.log(arr);
+      }
+
+      myFilter(numbers, 3, print);
+      myFilter(numbers, 10, print);
+    </script>
+  </body>
+</html>

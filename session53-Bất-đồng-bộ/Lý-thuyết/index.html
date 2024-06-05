@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        ĐỒNG BỘ VÀ BẤT ĐỒNG BỘ
+        ĐỒNG BỘ: Synchronous
+        BẤT ĐỒNG BỘ: Asynchronous
+        Javascript là 1 ngôn ngữ đơn luồng, tức là chạy 1 luồng duy nhất.
+        Luông code chạy: chạy từ trái qua phải => chạy từ trên xuống dưới
+
+        - Tại sao JS không đa luồng mafchir đơn luồng thôi?
+          + Khi đa luồng thì cí luồng nó chạy sẽ phải chia tài nguyên lẫn nhau,
+          ảnh hưởng tới logic code lẫn nhau cho nên tư duy ban đầu của JS là đơn
+          luồng Single-thread
+
+          Khi gặp các tác vụ cần thời gian xử lý như (chọc vào database, gửi request 
+          lên server, đọc file, ghi file, ....) thì JS sẽ không đợi các tác vụ này xử 
+          lý xong rồi mới đến tác vụ khác .
+
+          * CÓ 3 CÁCH ĐỂ GIẢI QUYẾT CÁC TÁC VỤ BẤT ĐỒNG BỘ 
+            1. calkback
+               - Calkback là gi ?
+                 + Là hàm được truyền vào làm đối số của hàm khác 
+            2. promise
+            3. asyn-await
+     -->
+    <script>
+      //   console.log(1);
+      //   // setTimeout là Web API
+      //   setTimeout(() => {
+      //     console.log(2);
+      //   }, 1000);
+      //   console.log(3);
+
+    //   let sdt;
+    //   function xinSdt(callback) {
+    //     console.log(
+    //       "hello em, anh đứng đây từ chiều, anh có thể xin sdt em không"
+    //     );
+    //     console.log("Đợi em suy nghĩ đã anh nhé !!!");
+    //     // suy nghĩ trong 3s
+    //     setTimeout(() => {
+    //       sdt = 123443364;
+    //       callback(sdt);
+    //     }, 3000);
+    //   }
+    //   xinSdt(goiKhiCoSdt);
+    //   // Dùng calkback để giải quyết vấn đề
+    //   // Tạo hàm khi nào có số thì mới gọi
+    //   function goiKhiCoSdt(sdt) {
+    //     console.log(`Đây là số của em nhé ${sdt}`);
+    //   }
+      // hàm find, findIndex, filter nhận về tham số là callback
+
+      //Hàm map
+      //   let arr = [1,2,3,4,5,6]
+      //   let result = arr.map((item)=>item*2)
+      //   console.log("mảng: ", result);
+
+      let arr = [1, 2, 3, 4, 5, 6];
+      function customMap(arr, callback) {
+        let resultArr = [];
+        for (let item of arr) {
+          resultArr.push(callback(item));
+        }
+        return resultArr;
+      }
+      console.log(
+        "giá trị mảng mới sau khi dùng customMap",
+        customMap(arr, (item) => item * 2)
+      );
+    </script>
+  </body>
+</html>

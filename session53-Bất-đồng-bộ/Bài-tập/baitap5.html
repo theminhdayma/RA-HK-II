@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkCondition(condition, callback, delay) {
+        setInterval(() => {
+          callback(condition());
+        }, delay);
+      }
+
+      function print(condition) {
+        console.log("Kết quả: ", condition);
+      }
+
+      function condition() {
+        count++;
+        return count % 2 === 0;
+      }
+
+      let count = 0;
+      checkCondition(condition, print, 1000);
+    </script>
+  </body>
+</html>

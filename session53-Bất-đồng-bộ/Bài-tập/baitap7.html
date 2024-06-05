@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [5, 2, 6, 8, 3, 4, 7, 9];
+      function myForEach(numbers, callback) {
+        numbers.map((item, index) => {
+          callback(item, index, numbers);
+        });
+      }
+
+      function print(item, index, numbers) {
+        console.log(`Vị trí: ${index} | Phần tử: ${item} | Mảng: `, numbers);
+      }
+      myForEach(arr, print);
+    </script>
+  </body>
+</html>

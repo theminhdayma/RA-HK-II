@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // Kiểu callback hell
+      function task1() {
+        setTimeout(() => {
+          console.log("Hàm task1 được thực thi");
+          setTimeout(() => {
+            console.log("Hàm task2 được thực thi");
+            setTimeout(() => {
+              console.log("Hàm task3 được thực thi - Hoàn thành");
+            }, 2000);
+          }, 1500);
+        }, 1000);
+      }
+      task1();
+    </script>
+  </body>
+</html>
