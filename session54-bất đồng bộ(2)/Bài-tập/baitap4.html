@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function sumWithAsyncAwait(arr) {
+        if (!Array.isArray(arr)) {
+          throw new Error("Tham số phải là một mảng");
+        }
+
+        if (arr.every((number) => number !== Number(number))) {
+          throw new Error("Mảng phải chứa toàn bộ các số nguyên");
+        }
+
+        const sum = arr.reduce((total, number) => total + number, 0);
+        return sum;
+      }
+
+      async function run() {
+        try {
+          const result = await sumWithAsyncAwait([1, 2, 3, 4, 5, 6]);
+          console.log(`Tổng các số trong mảng là: ${result}`);
+        } catch (error) {
+          console.log(`Lỗi: ${error.message}`);
+        }
+
+        try {
+          await sumWithAsyncAwait([1, "a", 3, 4]);
+        } catch (error) {
+          console.error(`Lỗi: ${error.message}`);
+        }
+      }
+
+      run();
+    </script>
+  </body>
+</html>

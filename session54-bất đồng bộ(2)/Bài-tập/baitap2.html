@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function divideNumbers(a, b) {
+        let result;
+        try {
+          if (a !== Number(a) || b !== Number(b)) {
+            throw new Error("Phải nhập vào hai số");
+          }
+          if (b === 0) {
+            throw new Error("Không thể chia cho 0");
+          }
+          result = a / b;
+          console.log(`Kết quả: ${result}`);
+        } catch (error) {
+          console.error(`Lỗi: ${error.message}`);
+        } finally {
+          console.log("Hàm divideNumbers đã kết thúc.");
+          console.log("===============================");
+        }
+        return result;
+      }
+
+      divideNumbers(24, 3);
+      divideNumbers(4, 0);
+      divideNumbers("abc", 4)
+    </script>
+  </body>
+</html>

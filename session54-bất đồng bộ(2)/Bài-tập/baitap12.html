@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // Hàm check số nguyên tố
+      function isPrime(num) {
+        if (num <= 1) return false;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+          if (num % i === 0) return false;
+        }
+        return true;
+      }
+
+      function generatePrimes(n) {
+        return new Promise((resolve, reject) => {
+          if (n !== Number(n) || n <= 0) {
+            reject("Tham số không hợp lệ");
+            return;
+          }
+
+          let primesArray = [];
+          for (let i = 2; i <= n; i++) {
+            if (isPrime(i)) {
+              primesArray.push(i);
+            }
+          }
+
+          resolve(primesArray);
+        });
+      }
+
+      async function main() {
+        try {
+          let primes = await generatePrimes(20);
+          console.log("Các số nguyên tố từ 2 đến 20 là:", primes);
+        } catch (error) {
+          console.error(error);
+        }
+
+        try {
+          let primes = await generatePrimes(-20);
+          console.log("Các số nguyên tố từ 2 đến 20 là:", primes);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      main();
+    </script>
+  </body>
+</html>

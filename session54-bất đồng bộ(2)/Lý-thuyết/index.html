@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Debug with Chrome dev tool</h1>
+    <!-- 
+        F9: Đặt break point
+
+        F10: dùng để chạy đến dòng tiếp theo trong 1 file
+        nếu như break point đang ở trong 1 hàm thì nó sẽ 
+        thực thi xong hàm đấy và chạy tới dòng tiếp theo
+        
+        F11: Dùng để chạy tới bước tiếp theo nếu break point 
+        đang ở trong 1 hàng thì nó sẽ debug từng bước trong hàng
+     -->
+    <script>
+      for (let i = 0; i < 5; i++) {
+        console.log(i);
+      }
+
+      const checkEvenNumber = (a) => {
+        if (a % 2 === 0) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+      checkEvenNumber(10);
+
+      const numbers = [1, 2, 3, 4, 5, 6, 7];
+      
+    </script>
+  </body>
+</html>

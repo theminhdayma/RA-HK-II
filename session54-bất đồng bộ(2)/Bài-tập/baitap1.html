@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let result;
+      function calculateBMI(weight, height) {
+        try {
+          let isCheck = true;
+          if (
+            weight !== Number(weight) ||
+            height !== Number(height) ||
+            weight <= 0 ||
+            height <= 0
+          ) {
+            console.log("Dữ liệu đầu vào không hợp lệ");
+            isCheck = false;
+          }
+
+          if (isCheck) {
+            result = (weight / height ** 2).toFixed(2);
+          }
+          return result;
+        } catch (error) {
+          console.error("Lỗi", error);
+        }
+      }
+
+      console.log(calculateBMI(60, 1.63));
+      console.log(calculateBMI("60", 1.63));
+    </script>
+  </body>
+</html>

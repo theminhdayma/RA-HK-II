@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [4, 2, 5, 8, 1, 7, 3, 9, 6];
+
+      function sortUpAscending(arr) {
+        return new Promise((resolve, reject) => {
+          try {
+            for (let i = 0; i < arr.length; i++) {
+              for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                  let temp = arr[i];
+                  arr[i] = arr[j];
+                  arr[j] = temp;
+                }
+              }
+            }
+            resolve(arr);
+          } catch (error) {
+            reject(error);
+          }
+        });
+      }
+
+      sortUpAscending(numbers)
+        .then((sortedArray) => {
+          console.log("Mảng sau khi sắp xếp:", sortedArray);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    </script>
+  </body>
+</html>

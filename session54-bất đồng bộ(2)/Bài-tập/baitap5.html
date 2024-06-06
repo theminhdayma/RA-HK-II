@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function isPrimeWithPromise(a) {
+        return new Promise((resolve, reject) => {
+          if (a !== Number(a)) {
+            reject("Phải truyền vào 1 số tự nhiên");
+          }
+
+          if (a <= 1) {
+            resolve(false);
+          }
+          for (let i = 2; Math.sqrt(a); i++) {
+            if (a % i === 0) {
+              resolve(false);
+            }
+          }
+          resolve(true);
+        });
+      }
+      isPrimeWithPromise("3")
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+
+      isPrimeWithPromise(3)
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+
+      isPrimeWithPromise(4)
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    </script>
+  </body>
+</html>
