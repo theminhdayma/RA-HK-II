@@ -233,5 +233,17 @@
       "comments": [],
       "id": 1
     }
+  ],
+  "post_bai_9": [
+    {
+      "title": "Bài tập 9",
+      "content": "Tìm hiểu về phương thức PUT VÀ PECTH",
+      "thumbnail": "image4.jpg",
+      "created_at": "2024-06-07",
+      "created_by": "Thế Minh",
+      "user_id": 1,
+      "comments": [],
+      "id": 1
+    }
   ]
 }
