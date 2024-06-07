@@ -1,0 +1,237 @@
+{
+  "users_bai_1": [
+    {
+      "id": 1,
+      "name": "Thế Minh"
+    },
+    {
+      "id": 2,
+      "name": "Minh Sâm"
+    }
+  ],
+  "posts_bai_2": [
+    {
+      "id": "post1",
+      "title": "First Post",
+      "content": "This is the content of the first post.",
+      "thumbnail": "image1.jpg",
+      "created_at": "2024-06-01",
+      "created_by": "Author1",
+      "comments": [
+        {
+          "id": "comment1-1",
+          "content": "First comment on first post.",
+          "created_at": "2024-06-02",
+          "created_by": "Commenter1"
+        },
+        {
+          "id": "comment1-2",
+          "content": "Second comment on first post.",
+          "created_at": "2024-06-02",
+          "created_by": "Commenter2"
+        },
+        {
+          "id": "comment1-3",
+          "content": "Third comment on first post.",
+          "created_at": "2024-06-02",
+          "created_by": "Commenter3"
+        }
+      ]
+    },
+    {
+      "id": "post2",
+      "title": "Second Post",
+      "content": "This is the content of the second post.",
+      "thumbnail": "image2.jpg",
+      "created_at": "2024-06-03",
+      "created_by": "Author2",
+      "comments": [
+        {
+          "id": "comment2-1",
+          "content": "First comment on second post.",
+          "created_at": "2024-06-04",
+          "created_by": "Commenter1"
+        },
+        {
+          "id": "comment2-2",
+          "content": "Second comment on second post.",
+          "created_at": "2024-06-04",
+          "created_by": "Commenter2"
+        },
+        {
+          "id": "comment2-3",
+          "content": "Third comment on second post.",
+          "created_at": "2024-06-04",
+          "created_by": "Commenter3"
+        }
+      ]
+    },
+    {
+      "id": "post3",
+      "title": "Third Post",
+      "content": "This is the content of the third post.",
+      "thumbnail": "image3.jpg",
+      "created_at": "2024-06-05",
+      "created_by": "Author3",
+      "comments": [
+        {
+          "id": "comment3-1",
+          "content": "First comment on third post.",
+          "created_at": "2024-06-06",
+          "created_by": "Commenter1"
+        },
+        {
+          "id": "comment3-2",
+          "content": "Second comment on third post.",
+          "created_at": "2024-06-06",
+          "created_by": "Commenter2"
+        },
+        {
+          "id": "comment3-3",
+          "content": "Third comment on third post.",
+          "created_at": "2024-06-06",
+          "created_by": "Commenter3"
+        }
+      ]
+    },
+    {
+      "id": "post4",
+      "title": "Fourth Post",
+      "content": "This is the content of the fourth post.",
+      "thumbnail": "image4.jpg",
+      "created_at": "2024-06-07",
+      "created_by": "Author4",
+      "comments": [
+        {
+          "id": "comment4-1",
+          "content": "First comment on fourth post.",
+          "created_at": "2024-06-08",
+          "created_by": "Commenter1"
+        },
+        {
+          "id": "comment4-2",
+          "content": "Second comment on fourth post.",
+          "created_at": "2024-06-08",
+          "created_by": "Commenter2"
+        },
+        {
+          "id": "comment4-3",
+          "content": "Third comment on fourth post.",
+          "created_at": "2024-06-08",
+          "created_by": "Commenter3"
+        }
+      ]
+    },
+    {
+      "id": "post5",
+      "title": "Fifth Post",
+      "content": "This is the content of the fifth post.",
+      "thumbnail": "image5.jpg",
+      "created_at": "2024-06-09",
+      "created_by": "Author5",
+      "comments": [
+        {
+          "id": "comment5-1",
+          "content": "First comment on fifth post.",
+          "created_at": "2024-06-10",
+          "created_by": "Commenter1"
+        },
+        {
+          "id": "comment5-2",
+          "content": "Second comment on fifth post.",
+          "created_at": "2024-06-10",
+          "created_by": "Commenter2"
+        },
+        {
+          "id": "comment5-3",
+          "content": "Third comment on fifth post.",
+          "created_at": "2024-06-10",
+          "created_by": "Commenter3"
+        }
+      ]
+    }
+  ],
+  "post_bai_3": [
+    {
+      "id": 1,
+      "title": "Cách học ReactJS hiệu quả",
+      "content": "Đọc bài tập và làm nhiều bài tập",
+      "thumbnail": "image4.jpg",
+      "created_at": "2024-06-07",
+      "created_by": "Thế Minh",
+      "user_id": 1,
+      "comments": [
+        {
+          "id": 1,
+          "content": "Bài viết rất ý nghĩa",
+          "created_at": "2024-06-07",
+          "user_1": 2
+        }
+      ]
+    }
+  ],
+  "post_bai_4": [
+    {
+      "id": 1,
+      "title": "Bài 4.1",
+      "content": "Hiểu biết về phương thức Get",
+      "image": "image4.1.jpg",
+      "created_at": "2024-06-07",
+      "created_by": "Thế Minh"
+    },
+    {
+      "id": 2,
+      "title": "Bài 4.2",
+      "content": "Hiểu biết về Get",
+      "thumbnail": "image4.2.jpg",
+      "created_at": "2024-06-07",
+      "created_by": "Minh Sân"
+    }
+  ],
+  "post_bai_5": [
+    {
+      "id": 2,
+      "title": "Bài 4.2",
+      "content": "Hiểu biết về Delete",
+      "thumbnail": "image4.2.jpg",
+      "created_at": "2024-06-07",
+      "created_by": "Minh Sân"
+    }
+  ],
+  "post_bai_6": [
+    {
+      "id": 1,
+      "title": "Bài tập 6",
+      "content": "Hiểu về phương thức tìm kiếm theo tác giả",
+      "thumbnail": "image4.jpg",
+      "created_at": "2024-06-07",
+      "created_by": "Thế Minh",
+      "user_id": 1,
+      "comments": []
+    }
+  ],
+  "post_bai_7": [
+    {
+      "title": "Bài tập 7",
+      "content": "Hiểu về phương thức POST",
+      "thumbnail": "image4.jpg",
+      "created_at": "2024-06-07",
+      "created_by": "Thế Minh",
+      "user_id": 1,
+      "comments": [],
+      "id": 1
+    }
+  ],
+  "post_bai_8": [
+    {
+      "title": "Bài tập 8",
+      "content": "Hiểu về phương thức POST và GET",
+      "thumbnail": "image4.jpg",
+      "created_at": "2024-06-07",
+      "created_by": "Thế Minh",
+      "user_id": 1,
+      "comments": [],
+      "id": 1
+    }
+  ]
+}
