@@ -1,0 +1,170 @@
+.first-header{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    margin-bottom: 20px;
+}
+.first-header button{
+    width: 150px;
+    height: 45px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: small;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.second-header{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+.second-header input{
+    margin-left: 15px;
+    padding-left: 5px;
+    width: 250px;
+    height: 25px;
+    color: gray;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+select{
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.modal{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    display: flex;
+}
+form{
+    margin: auto;
+    background-color: white;
+    width:400px ;
+    height: 450px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px;
+}
+.button-box{
+    margin-top: 30px;
+    display: flex;
+    gap:10px;
+    justify-content: flex-end;
+}
+.button-box button:first-child{
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.733);
+    color: grey;
+    background-color: white;
+    width:40px ;
+    height: 30px;
+    cursor: pointer;
+}
+.button-box button:last-child{
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.753);
+    color:white;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+.input-box input{
+    margin-top: 5px;
+    height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.733);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.student-tr{
+    height: 55px;
+    border-bottom: 1px solid gray;
+}
+.student-tr td{
+    color: rgb(128, 128, 128);
+}
+.student-tr td:nth-child(5){
+   
+}
+.active-status{
+   width: 150px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 128, 0, 0.527);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    background-color: rgba(0, 128, 0, 0.116);
+    
+}
+.student-tr button{
+    margin-right: 10px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.student-tr button:first-child{
+    border: 2px solid rgba(128, 0, 128, 0.527);
+    background-color: rgba(128, 0, 128, 0.212);
+    color: purple;
+}
+.student-tr button:nth-child(2){
+    border: 2px solid rgba(255, 68, 0, 0.568);
+    background-color:rgba(255, 68, 0, 0.253);
+    color: orangered;
+
+}
+
+.student-tr button:nth-child(3){
+    border: 2px solid rgba(255, 0, 0, 0.562);
+    background-color:rgba(255, 0, 0, 0.308);
+    color:red;
+}
+
+table{
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+.title-tr{
+    height: 35px;
+    border-bottom:1px solid gray ;
+}
+.title-tr td{
+    color: rgba(128, 128, 128, 0.856);
+    font-size: large;
+
+}
+td:first-child{
+    width: 10%;
+}
+td:nth-child(2){
+    width: 10%;
+}
+td:nth-child(3){
+    width: 20%;
+}
+td:nth-child(4){
+    width: 10%;
+}
+td:nth-child(6){
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+td:last-child{
+    width: 200px;
+}
