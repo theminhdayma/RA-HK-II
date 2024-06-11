@@ -13,6 +13,7 @@ interface Student {
   created_at: string;
 }
 
+
 export default function Student() {
   const [students, setStudents] = useState<Student[]>([]);
   const [showFormUpdateStudent, setShowFormUpdateStudent] =
@@ -45,7 +46,7 @@ export default function Student() {
         axios
           .delete(`http://localhost:8080/students/${id}`)
           .then(() => {
-            getData();
+            getData()
             swal(`Đã xóa sinh viên ${name}`, { icon: "success" });
           })
           .catch((err) => console.error(err));
@@ -101,6 +102,7 @@ export default function Student() {
       </tbody>
       {showFormUpdateStudent && currentStudent && (
         <FormUpdateStudent
+          loadData={getData}
           student={currentStudent}
           closeFormCreate={closeFormCreate}
         />

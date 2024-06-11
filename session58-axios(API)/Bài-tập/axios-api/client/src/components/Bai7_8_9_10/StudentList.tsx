@@ -39,7 +39,7 @@ export default function StudentList() {
 
   const handleRecordsPerPageChange = (perPage: number) => {
     setRecordsPerPage(perPage);
-    setCurrentPage(1); // Reset to first page when changing records per page
+    setCurrentPage(1); 
   };
 
   return (

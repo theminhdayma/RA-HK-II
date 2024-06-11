@@ -6,6 +6,7 @@ export default function App() {
     <div>
       {/* <Baitap2_3_4_5_6/> */}
       <Index/>
+      <br /><br /><br />
     </div>
   )
 }

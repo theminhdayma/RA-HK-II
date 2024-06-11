@@ -1,7 +1,7 @@
 import Header from "./Header";
 import StudentList from "./StudentList";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 interface Student {
@@ -22,11 +22,15 @@ export default function Index() {
       .then((data) => setStudent(data.data))
       .catch((err) => console.error(err));
   };
+  useEffect(() => {
+    loadData();
+  }, []);
+
   return (
     <>
       <div className="w-[80%] m-auto mt-4 h-[100vh]">
         <main className="main">
-          <Header loadData={loadData}/>
+          <Header loadData={loadData} />
           {/* Danh sách nhân viên */}
           <StudentList />
         </main>

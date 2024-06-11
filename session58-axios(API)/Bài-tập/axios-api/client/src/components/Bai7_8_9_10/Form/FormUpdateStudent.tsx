@@ -13,10 +13,15 @@ interface Student {
 
 interface Props {
   student: Student;
+  loadData: () => void;
   closeFormCreate: () => void;
 }
 
-export default function FormUpdateStudent({ student, closeFormCreate }: Props) {
+export default function FormUpdateStudent({
+  student,
+  loadData,
+  closeFormCreate,
+}: Props) {
   const [updatedStudent, setUpdatedStudent] = useState<Student>(student);
 
   const [errors, setErrors] = useState({
@@ -29,7 +34,9 @@ export default function FormUpdateStudent({ student, closeFormCreate }: Props) {
     setUpdatedStudent(student);
   }, [student]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setUpdatedStudent((prev) => ({
       ...prev,
@@ -77,8 +84,12 @@ export default function FormUpdateStudent({ student, closeFormCreate }: Props) {
 
     if (validate()) {
       axios
-        .patch(`http://localhost:8080/students/${updatedStudent.id}`, updatedStudent)
+        .patch(
+          `http://localhost:8080/students/${updatedStudent.id}`,
+          updatedStudent
+        )
         .then(() => {
+          loadData();
           closeFormCreate();
         })
         .catch((err) => {

@@ -2,20 +2,20 @@ import { useState } from "react";
 import FormCreateStudents from "./Form/FormCreateStudents";
 
 interface Student {
-    id: string;
-    student_name: string;
-    email: string;
-    address: string;
-    phone: string;
-    status: boolean;
-    created_at: string;
-  }
-
-interface Props {
-    loadData: ()=> void
+  id: string;
+  student_name: string;
+  email: string;
+  address: string;
+  phone: string;
+  status: boolean;
+  created_at: string;
 }
 
-export default function Header({loadData} : Props) {
+interface Props {
+  loadData: () => void;
+}
+
+export default function Header({ loadData }: Props) {
   const [showFormCreateStudent, setShowFormCreateStudent] =
     useState<boolean>(false);
 
@@ -24,8 +24,8 @@ export default function Header({loadData} : Props) {
   };
 
   const closeFormCreate = () => {
-    setShowFormCreateStudent(false)
-  }
+    setShowFormCreateStudent(false);
+  };
 
   return (
     <>
@@ -46,7 +46,12 @@ export default function Header({loadData} : Props) {
           <i className="fa-solid fa-arrows-rotate" title="Refresh" />
         </div>
       </div>
-      {showFormCreateStudent && <FormCreateStudents loadData={loadData} closeFormCreate={closeFormCreate}/>}
+      {showFormCreateStudent && (
+        <FormCreateStudents
+          loadData={loadData}
+          closeFormCreate={closeFormCreate}
+        />
+      )}
     </>
   );
 }

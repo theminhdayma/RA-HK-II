@@ -20,6 +20,7 @@ export default function FormCreateStudents({
   loadData,
   closeFormCreate,
 }: Props) {
+  
   const [student, setStudent] = useState<Student>({
     id: `${Math.floor(Math.random() * 9999999999999)}`,
     student_name: "",
@@ -81,14 +82,15 @@ export default function FormCreateStudents({
     return valid;
   };
 
-  const handleCreateStudent = () => {
+  const handleCreateStudent = (e: React.FormEvent) => {
+    e.preventDefault()
 
     if (validate()) {
       axios
         .post("http://localhost:8080/students", student)
         .then(() => {
-          closeFormCreate();
           loadData();
+          closeFormCreate();
         })
         .catch((err) => {
           console.error("Error creating student:", err);
