@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": "5",
-      "product_name": "product_100",
-      "image": "https://img1.kienthucvui.vn/uploads/2019/10/30/hinh-anh-rau-cu-qua_112154470.jpg",
-      "price": 2400,
-      "quantity": 50,
-      "created_at": "2024/07/27"
-    },
-    {
       "id": "6",
       "product_name": "product_6",
       "image": "https://img1.kienthucvui.vn/uploads/2019/10/30/hinh-anh-rau-cu-qua_112154470.jpg",

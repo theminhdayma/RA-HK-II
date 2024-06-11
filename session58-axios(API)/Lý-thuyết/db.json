@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Thế Minh",
+      "age": 19
+    },
+    {
+      "id": 2,
+      "name": "Minh Sâm",
+      "age": 18
+    },
+    {
+      "name": "Vải Thiều",
+      "age": 20,
+      "id": 3
+    },
+    {
+      "name": "Hồng Hà",
+      "age": 21,
+      "id": 4
+    }
+  ]
+}
