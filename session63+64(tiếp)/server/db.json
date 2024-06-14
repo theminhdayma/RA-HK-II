@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "Thế Minh",
+      "email": "theminh@gmail.com",
+      "password": "theminh123"
+    },
+    {
+      "username": "B23DTCN185",
+      "email": "theminh2005z@gmail.com",
+      "password": "$2a$10$R2bsgBcBvhZ/6jgZFF.W5eelvNn3091en/EsYfkt2T.Tz/P.OJHFW",
+      "id": 2
+    },
+    {
+      "username": "Minh Sâm",
+      "email": "tranthiminhsam2006@icloud.com",
+      "password": "$2a$10$sMvPci7Rq57oZXK4G5xRZeaQ2uV6zpeUX4Pg6v8Z.ekPK4hmqzIPa",
+      "id": 3
+    }
+  ]
+}
