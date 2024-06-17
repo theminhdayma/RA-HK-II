@@ -26,7 +26,7 @@ export default function Login() {
       const response = await axios.get(
         `http://localhost:8080/users?email=${email}`
       );
-      const user = response.data[0]; // Giả sử lấy user đầu tiên
+      const user = response.data[0];
 
       if (!user) {
         alert("Không tìm thấy tài khoản.");
@@ -44,7 +44,6 @@ export default function Login() {
       alert("Đăng nhập thành công !");
       reset()
       //navigate("/home")
-      // Thực hiện các hành động sau khi đăng nhập thành công (chuyển hướng, lưu session, v.v.)
     } catch (error) {
       console.error(error);
       alert("Đăng nhập thất bại.");
