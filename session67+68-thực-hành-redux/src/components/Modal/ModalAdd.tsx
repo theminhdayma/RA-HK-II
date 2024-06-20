@@ -15,6 +15,7 @@ interface Book {
 }
 
 const ModalAdd = ({ closeModalAdd, addBook }: Props) => {
+  const [minDate, setDate] = useState<string>("")
   const [formData, setFormData] = useState({
     nameBook: "",
     nameStudent: "",
