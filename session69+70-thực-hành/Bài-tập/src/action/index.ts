@@ -1,6 +1,14 @@
-export const actionBook = (type: string, action: any) => {
+import { ProductType } from "../interface/interface"
+export const actionProduct = (type: string, payload:ProductType ) => {
     return {
         type,
-        action
+        payload
+    }
+}
+
+export const actionCart = (type: string, payload: ProductType) => {
+    return {
+        type,
+        payload
     }
 }

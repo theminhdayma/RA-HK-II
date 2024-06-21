@@ -1,6 +1,18 @@
+// components/Cart.tsx
+
 import React from "react";
+import { useSelector } from "react-redux";
+import { ProductType } from "../../interface/interface";
 
 export default function Cart() {
+  const stateCart: ProductType[] = useSelector(
+    (state: any) => state.cartProduct
+  );
+
+  const totalQuantity = stateCart.reduce(
+    (total, product) => total + product.number,
+    0
+  );
   return (
     <div className="panel-body">
       <table className="table">
@@ -14,26 +26,26 @@ export default function Cart() {
           </tr>
         </thead>
         <tbody id="my-cart-body">
-          {productListCart.map((product, index) => (
-            <tr key={product.id}>
+          {stateCart.map((product, index) => (
+            <tr key={index}>
               <th scope="row">{index + 1}</th>
               <td>{product.name}</td>
-              <td>{product.price} USD</td>
+              <td> {product.price} USD</td>
               <td>
                 <input
                   name={`cart-item-quantity-${product.id}`}
                   type="number"
-                //   value={quantities[product.id]}
-                  onChange={(e) =>
-                    // handleQuantityChange(product.id, parseInt(e.target.value))
-                  }
+                  // value={quantities[product.id]}
+                  // onChange={(e) =>
+                  // handleQuantityChange(product.id, parseInt(e.target.value))
+                  // }
                 />
               </td>
               <td>
                 <a
                   className="label label-info update-cart-item"
                   data-product={product.id}
-                //   onClick={() => handleUpdateClick(product.id)}
+                  //   onClick={() => handleUpdateClick(product.id)}
                   style={{ cursor: "pointer" }}
                 >
                   Update
@@ -41,7 +53,7 @@ export default function Cart() {
                 <a
                   className="label label-danger delete-cart-item"
                   data-product={product.id}
-                //   onClick={() => onDeleteProduct(product.id)}
+                  //   onClick={() => onDeleteProduct(product.id)}
                   style={{ cursor: "pointer", marginLeft: "10px" }}
                 >
                   Delete
@@ -53,19 +65,19 @@ export default function Cart() {
         <tfoot id="my-cart-footer">
           <tr>
             <td colSpan={4}>
-              {/* {totalQuantity > 0 ? (
+              {totalQuantity > 0 ? (
                 <span>
                   Có <b>{totalQuantity}</b> sản phẩm trong giỏ hàng
                 </span>
               ) : (
                 "Chưa có sản phẩm trong giỏ hàng"
-              )} */}
+              )}
             </td>
             <td colSpan={2} className="total-price text-left">
-              {/* {productListCart.reduce(
+              {stateCart.reduce(
                 (total, product) => total + product.price * product.number,
                 0
-              )} */}
+              )}
               USD
             </td>
           </tr>

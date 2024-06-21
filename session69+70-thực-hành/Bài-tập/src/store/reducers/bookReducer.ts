@@ -1,17 +1,15 @@
-import {Product} from "../../interface/interface.ts"
+import {ProductType} from "../../interface/interface.ts"
 import {Action} from "../../interface/interface.ts"
 
-const initialProduct: Product[] = JSON.parse(localStorage.getItem("Products") || "[]")
+const initialProduct: ProductType[] = JSON.parse(localStorage.getItem("listProduct") || "[]")
 
-const bookReducer = (state=initialProduct, action: Action) => {
+const productReducer = (state=initialProduct, action: Action) => {
     switch (action.type) {
-        case "ADD":
-            return state
-        case "UPDATE": 
+        case "RENDER":
             return state
         default:
             return state;
     }
 }
 
-export default bookReducer;
+export default productReducer;
