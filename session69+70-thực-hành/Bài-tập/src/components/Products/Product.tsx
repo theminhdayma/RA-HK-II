@@ -30,7 +30,7 @@ export default function Product() {
                 style={{
                   width: "100px",
                   height: "30px",
-                  backgroundColor: product.number === 0  ? "red" : "green",
+                  backgroundColor: product.quantity === 0  ? "red" : "green",
                   color: "white",
                   fontSize: "18px",
                   border: 0,
