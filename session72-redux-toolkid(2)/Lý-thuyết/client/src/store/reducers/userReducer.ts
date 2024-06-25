@@ -49,7 +49,8 @@ const userReducer = createSlice ({
         // Nơi khai báo cách action
     },
     extraReducers: (builder: any)=> {
-        builder.addCase(getUser.pending, (state: any, action: any)=> {
+        builder
+        .addCase(getUser.pending, (state: any, action: any)=> {
             // TRạng thái chờ lấy dữ liệu   
 
         })
