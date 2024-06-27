@@ -1,0 +1,56 @@
+{
+  "listProduct": [
+    {
+      "id": 1,
+      "name": "Thrrowback Hip Bag",
+      "total": 16,
+      "quantity": 0,
+      "description": "Siêu rẻ và đẹp",
+      "price": 30,
+      "image": "https://vn-test-11.slatic.net/p/0735d073a64eff927ab770bdea4ed795.jpg",
+      "status": false
+    },
+    {
+      "id": 2,
+      "name": "Lie Lie Bag",
+      "total": 17,
+      "quantity": 0,
+      "description": "Siêu đẹp và rẻ",
+      "price": 30,
+      "image": "https://img.lovepik.com/photo/48013/2095.jpg_wh860.jpg",
+      "status": false
+    },
+    {
+      "id": 3,
+      "name": "Beautiful handbag",
+      "total": 18,
+      "quantity": 0,
+      "description": "Thương hiệu là đẳng cấp",
+      "price": 30,
+      "image": "https://tse1.mm.bing.net/th?id=OIP.ZjRNSnaY_gbOm1H8mtSJUwHaHa&pid=Api&P=0&h=180",
+      "status": false
+    }
+  ],
+  "listCart": [
+    {
+      "id": 1,
+      "name": "Thrrowback Hip Bag",
+      "total": 18,
+      "quantity": 1,
+      "description": "Siêu rẻ và đẹp",
+      "price": 30,
+      "image": "https://vn-test-11.slatic.net/p/0735d073a64eff927ab770bdea4ed795.jpg",
+      "status": false
+    },
+    {
+      "id": 2,
+      "name": "Lie Lie Bag",
+      "total": 18,
+      "quantity": 1,
+      "description": "Siêu đẹp và rẻ",
+      "price": 30,
+      "image": "https://img.lovepik.com/photo/48013/2095.jpg_wh860.jpg",
+      "status": false
+    }
+  ]
+}
