@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Thế Minh",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-hkii.appspot.com/o/7b42ef2c-5724-4e1c-abe2-a4017fc4ec1a.jpg?alt=media&token=dea5d660-bbdc-44b0-ad93-c281a49e3175"
+    },
+    {
+      "name": "Hay",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-hkii.appspot.com/o/24d21186-b562-40ea-9454-4f1cd2932d9e.jpg?alt=media&token=6eec246c-94b4-4fdf-ace3-8c06c5b586af",
+      "id": 2
+    }
+  ]
+}
